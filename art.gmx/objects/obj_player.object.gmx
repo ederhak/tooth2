@@ -166,71 +166,6 @@ if (instance_number(obj_frog) == 0 &amp;&amp; global.points &gt;= 1000 &amp;&amp
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_shield">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with other {instance_destroy();}
-audio_emitter_pitch(ae, random_range(.75,1.25));
-audio_emitter_gain(ae,random_range(.5,1));
-audio_play_sound_on(ae,snd_coin, false,8)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_boss">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if obj_player.vsp &gt; 0 
-{
-with other 
-{
-instance_destroy();
-obj_player.vsp = -obj_player.vsp;
-}
-} else 
-{
-if (hp &lt; 2) {
-game_restart();
-} else {
-obj_player.hp -= 1;
-obj_player.vsp = -obj_player.vsp*2;
-obj_player.hsp = -obj_player.hsp*2;
-}
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_froge">
       <action>
         <libid>1</libid>
@@ -392,6 +327,45 @@ hsp = -hsp*2;
       </action>
     </event>
     <event eventtype="4" ename="obj_enemy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if obj_player.vsp &gt; 0 
+{
+with other 
+{
+instance_destroy();
+obj_player.vsp = -obj_player.vsp;
+}
+} else 
+{
+if (hp &lt; 2) {
+game_restart();
+} else {
+obj_player.hp -= 1;
+obj_player.vsp = -obj_player.vsp*2;
+obj_player.hsp = -obj_player.hsp*2;
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>

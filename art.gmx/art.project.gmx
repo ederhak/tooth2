@@ -63,6 +63,14 @@
     <sprite>sprites\sprite45</sprite>
     <sprite>sprites\sprite46</sprite>
     <sprite>sprites\sprite47</sprite>
+    <sprite>sprites\sprite14_unnamed (3)</sprite>
+    <sprite>sprites\sprite15_unnamed (4)</sprite>
+    <sprite>sprites\sprite16_unnamed (5)</sprite>
+    <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\sprite27_04pavinform256</sprite>
+    <sprite>sprites\spr_boss_bullet</sprite>
+    <sprite>sprites\spr_frogbox</sprite>
+    <sprite>sprites\spr_minifrog</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -94,11 +102,13 @@
     <object>objects\obj_mushroom</object>
     <object>objects\obj_cactus</object>
     <object>objects\obj_enemy</object>
+    <object>objects\obj_boss_projectile</object>
     <object>objects\obj_dead</object>
     <object>objects\obj_bug_head</object>
     <object>objects\obj_bug_segment</object>
     <object>objects\obj_spike</object>
     <object>objects\obj_bump</object>
+    <object>objects\obj_boss</object>
     <object>objects\obj_faucet</object>
     <object>objects\obj_projectile</object>
     <object>objects\obj_frog</object>
@@ -106,11 +116,13 @@
     <object>objects\obj_silver</object>
     <object>objects\obj_copper</object>
     <object>objects\obj_gold</object>
+    <object>objects\object12</object>
     <object>objects\obj_rainbow</object>
     <object>objects\obj_froge</object>
     <object>objects\obj_slug</object>
     <object>objects\obj_background</object>
     <object>objects\obj_explosion</object>
+    <object>objects\obj_minifrog</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
