@@ -42,6 +42,8 @@ globalvar combo;
 global.combo = 0;
 
 instance_create(x,y,obj_background);
+
+y = -32;
 </string>
           </argument>
         </arguments>
@@ -163,7 +165,7 @@ if (x &lt;= (global.length2/2) &amp;&amp; cancreate)
 }
 }
 
-if (instance_number(obj_frog) == 0 &amp;&amp; global.points &gt;= 50*global.dif &amp;&amp; switcher) {instance_create(x,-y*4, obj_frog); switcher = 0;}
+if (instance_number(obj_frog) == 0 &amp;&amp; global.points &gt;= 50*global.dif &amp;&amp; switcher) {instance_create(x+choose(134, -134),y-room_height, obj_frog); switcher = 0;}
 
 
 </string>
@@ -267,6 +269,7 @@ global.combo+=1;
 if (hp &lt; 2) {
 room_restart();
 } else {
+instance_destroy();
 obj_player.hp -= 1;
 obj_player.vsp = -obj_player.vsp*2;
 obj_player.hsp = -obj_player.hsp*2;
@@ -423,7 +426,8 @@ global.combo = 0;
 with other 
 {
 instance_destroy();
-obj_player.vsp = -obj_player.vsp - 1;
+if distance_to_object(instance_nearest(x,y,obj_enemy)) &lt;= 45 {} else { 
+obj_player.vsp = -obj_player.vsp - 1;}
 global.combo += 1;
 }
 } else 
@@ -431,6 +435,7 @@ global.combo += 1;
 if (hp &lt; 2) {
 room_restart();
 } else {
+instance_destroy();
 obj_player.hp -= 1;
 obj_player.vsp = -obj_player.vsp*2;
 obj_player.hsp = -obj_player.hsp*2;
