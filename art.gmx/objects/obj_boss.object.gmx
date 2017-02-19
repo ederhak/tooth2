@@ -29,6 +29,7 @@
 alarm[1] = room_speed*16*(3 div global.dif);
 anger = 5*global.dif;
 hp = 100*global.dif;
+view_object[2] = self;
 </string>
           </argument>
         </arguments>
@@ -58,10 +59,10 @@ if ran == 1 {instance_create(x,y,obj_copper)} else if ran == 2 {instance_create(
 if value &gt; 3 {ran = choose(1,2,3)} else if value &gt; 2 { ran = choose(1,2)} else {ran = 1}
 if (irandom_range(1,10) == 1) {instance_create(x,y,obj_shield)}
 }
-with obj_player.boss2 { instance_change(obj_boss, true);}
-boss3 = obj_player.boss3;
-boss3.x = obj_player.x;
-boss3.y = obj_player.y - view_hview[0];
+with owner.boss3 { instance_change(obj_boss_three, true);}
+boss3 = owner.boss3;
+boss3.x = owner.x;
+boss3.y = owner.y - view_hview[0]/2;
 </string>
           </argument>
         </arguments>
@@ -165,7 +166,7 @@ if hp &lt; 1 {instance_destroy()};
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_healthbar(x-(sprite_width/2), y - 25 - (sprite_height/2), x+(sprite_width/2), y - (sprite_height/2), hp, c_maroon, c_red, c_lime, 0,true,true);
+draw_healthbar(x-(sprite_width/2), y - 25 - (sprite_height/2), x+(sprite_width/2), y - (sprite_height/2), hp/global.dif, c_maroon, c_red, c_lime, 0,true,true);
 </string>
           </argument>
         </arguments>

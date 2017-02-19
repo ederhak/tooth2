@@ -85,6 +85,9 @@ reflect = self;
 boss1 = instance_create(x,y,obj_boss_1);
 boss2 = instance_create(x,y,obj_boss_2);
 boss3 = instance_create(x,y,obj_boss_3);
+boss1.owner = self;
+boss2.owner = self;
+boss3.owner = self;
 </string>
           </argument>
         </arguments>
@@ -225,7 +228,7 @@ reflect.y = y;
 {
 with other 
 {
-hp -= 1+(1+3 div global.dif + 1)*(1+global.combo+1);
+hp -= (3 div global.dif )*(global.combo+1);
 obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
@@ -291,7 +294,7 @@ audio_play_sound_on(ae,snd_coin, false,8)
 {
 with other 
 {
-hp -= 1+(1+3 div global.dif + 1)*(1+global.combo+1);
+hp -= (3 div global.dif )*(global.combo+1);
 obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
@@ -399,7 +402,7 @@ audio_play_sound_on(ae,snd_coin, false,8)
 {
 with other 
 {
-hp -= 1+(1+3 div global.dif + 1)*(1+global.combo+1);
+hp -= (3 div global.dif )*(global.combo+1);
 obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
