@@ -116,7 +116,7 @@
     <object>objects\obj_silver</object>
     <object>objects\obj_copper</object>
     <object>objects\obj_gold</object>
-    <object>objects\object12</object>
+    <object>objects\obj_shield</object>
     <object>objects\obj_rainbow</object>
     <object>objects\obj_froge</object>
     <object>objects\obj_slug</object>

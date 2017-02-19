@@ -79,7 +79,6 @@ for (value =random_range(3,36); value &gt; 1; value -= ran)
 if ran == 1 {instance_create(x,y,obj_copper)} else if ran == 2 {instance_create(x,y,obj_silver)} else if ran == 3 instance_create(x,y,obj_gold){}
 if value &gt; 3 {ran = choose(1,2,3)} else if value &gt; 2 { ran = choose(1,2)} else {ran = 1}
 }
-obj_player.vsp = obj_player.vsp*obj_player.vsp;
 with boop {instance_destroy()}
 if (irandom_range(1,10) == 1) {instance_create(x,y,obj_shield)}
 </string>
