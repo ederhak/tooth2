@@ -13,6 +13,7 @@
     <sound>sound\snd_coin</sound>
     <sound>sound\snd_birth</sound>
     <sound>sound\snd_death</sound>
+    <sound>sound\bwoop</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_greener</sprite>
@@ -106,6 +107,9 @@
     <script>scripts\scr_options.gml</script>
     <script>scripts\scr_menu.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\combo_font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_greener</object>
@@ -147,6 +151,7 @@
     <object>objects\obj_minifrog</object>
     <object>objects\obj_ray</object>
     <object>objects\obj_button</object>
+    <object>objects\management</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>

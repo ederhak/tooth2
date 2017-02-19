@@ -28,7 +28,7 @@
             <string>grav = 0.4; hsp = 0; vsp = 0; jumpSpeed = 8; moveSpeed = 4;
 state = choose(scr_frog_idle,scr_pounce,scr_frog_jump,scr_frog_dig, scr_frog_tongue);
 script_execute(state);
-hp = 100;
+hp = 100*(3 div global.dif);
 </string>
           </argument>
         </arguments>

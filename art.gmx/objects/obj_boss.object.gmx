@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = room_speed/4;
-alarm[1] = room_speed*16;
-anger = 5;
-hp = 100;
+            <string>alarm[0] = room_speed/4*(3 div global.dif);
+alarm[1] = room_speed*16*(3 div global.dif);
+anger = 5*(3 div global.dif);
+hp = 100*(3 div global.dif);
 </string>
           </argument>
         </arguments>
@@ -51,7 +51,7 @@ hp = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = room_speed*16;
+            <string>alarm[1] = room_speed*16*(3 div global.dif);
 instance_create(x,y-95,obj_minifrog);
 </string>
           </argument>
@@ -75,9 +75,9 @@ instance_create(x,y-95,obj_minifrog);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = room_speed/4;
+            <string>alarm[0] = room_speed/4*(3 div global.dif);
 bullet = instance_create(x,y,obj_boss_projectile);
-bullet.speed = anger;
+bullet.speed = anger*(3 div global.dif);
 bullet.direction = direction;
 
 </string>
@@ -103,7 +103,7 @@ bullet.direction = direction;
           <argument>
             <kind>1</kind>
             <string>direction += 1;
-anger = 5/hp +  4.95;
+anger = 5*(3 div global.dif)/hp +  4.95;
 </string>
           </argument>
         </arguments>

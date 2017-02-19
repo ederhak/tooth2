@@ -98,7 +98,7 @@ corpse.image_xscale = image_xscale;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (length &gt; 0) { next_segment = instance_create(x,y,obj_bug_segment); next_segment.length = length -1; next_segment.latency = latency; next_segment.last_segment = self; }
+            <string>if (length &gt; 0) { next_segment = instance_create(x,y,obj_bug_segment); next_segment.length = length -1; next_segment.latency = latency; next_segment.last_segment = self; } else if (length &lt; 1) {nex_segment = self}
 </string>
           </argument>
         </arguments>
