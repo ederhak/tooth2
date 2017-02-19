@@ -214,7 +214,7 @@ audio_play_sound_on(ae,snd_coin, false,8)
 with other 
 {
 if !(alarm[0] &gt; 0) {alarm[0] = room_speed*2.5;}
-obj_player.vsp = -obj_player.vsp;
+obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
 {
@@ -279,7 +279,7 @@ audio_play_sound_on(ae,snd_coin, false,8)
 with other 
 {
 instance_destroy();
-obj_player.vsp = -obj_player.vsp;
+obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
 {
@@ -374,7 +374,7 @@ hsp = -hsp*2;
 with other 
 {
 instance_destroy();
-obj_player.vsp = -obj_player.vsp;
+obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
 {

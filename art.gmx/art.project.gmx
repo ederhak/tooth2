@@ -75,7 +75,9 @@
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_generate.gml</script>
     <script>scripts\scr_render.gml</script>
