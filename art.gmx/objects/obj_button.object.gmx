@@ -3,7 +3,7 @@
   <spriteName>spr_menu</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -59,19 +59,74 @@ facing = 1;
             <kind>1</kind>
             <string>if (text == "play")
 {
-
+MenuColorChange(c_white, c_lime);
+menuSizeChange(2,0.5);
 }
 if (text == "help")
 {
-
+MenuColorChange(c_white, c_blue);
+menuSizeChange(2,0.5);
 }
 if (text == "options")
 {
-
+MenuColorChange(c_white, c_purple);
+menuSizeChange(2,0.5);
 }
 if (text == "exit")
 {
-
+MenuColorChange(c_white, c_maroon);
+menuSizeChange(2,0.5);
+x = view_xview[0]+4*sprite_width;
+y = view_xview[0]+sprite_height;
+}
+if (text == "menu")
+{
+MenuColorChange(c_white, c_red);
+menuSizeChange(2,0.5);
+x = view_xview[0]+sprite_width;
+y = view_xview[0]+sprite_height;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (text == "play")
+{
+scr_play();
+}
+if (text == "help")
+{
+scr_help();
+}
+if (text == "options")
+{
+scr_options();
+}
+if (text == "exit")
+{
+scr_exit();
+}
+if (text == "menu")
+{
+scr_menu();
 }
 </string>
           </argument>
@@ -95,7 +150,7 @@ if (text == "exit")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index, image_alpha, x, y, x_scale, yscale, rot, col, alpha);
+            <string>draw_sprite_ext(sprite_index, image_alpha, x, y, x_scale, y_scale, rot, col, alpha);
 
 draw_set_color(col);
 draw_set_halign(fa_center);

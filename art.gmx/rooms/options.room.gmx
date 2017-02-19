@@ -51,10 +51,8 @@
     <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_button" x="320" y="128" name="inst_92BE692C" locked="0" code="text = &quot;play&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="320" y="224" name="inst_4B789D51" locked="0" code="text = &quot;options&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="320" y="320" name="inst_9228B500" locked="0" code="text = &quot;help&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="320" y="416" name="inst_B67AC877" locked="0" code="text = &quot;exit&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="64" y="32" name="inst_CCEAE33B" locked="0" code="text = &quot;menu&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="176" y="32" name="inst_F12A69E7" locked="0" code="text = &quot;exit&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
