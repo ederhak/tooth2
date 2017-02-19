@@ -8,4 +8,5 @@ instance_activate_object(obj_frog);
 instance_activate_object(obj_boss);
 instance_activate_object(obj_minifrog);
 instance_activate_object(obj_boss_projectile);
+instance_activate_object(obj_boss_three);
 

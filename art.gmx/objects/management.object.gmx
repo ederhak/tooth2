@@ -80,8 +80,8 @@ global.sel = self;
             <string>if global.pause = false {
 instance_deactivate_all(true);
 global.pause = true;
-menubox = instance_create(view_wview[0]/2, view_hview[0]/2 - 48, obj_button);
-resumebox =  instance_create(view_wview[0]/2, view_hview[0]/2 + 48, obj_button);
+menubox = instance_create(view_wview[0]-room_width/2, view_hview[0]-room_height/2 - 48, obj_button);
+resumebox =  instance_create(view_wview[0]-room_width/2, view_hview[0]-room_height/2 + 48, obj_button);
 menubox.text = "menu";
 resumebox.text = "resume";
 } else 

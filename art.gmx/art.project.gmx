@@ -85,6 +85,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
