@@ -74,6 +74,8 @@
     <sprite>sprites\spr_boss_bullet</sprite>
     <sprite>sprites\spr_frogbox</sprite>
     <sprite>sprites\spr_minifrog</sprite>
+    <sprite>sprites\spr_fisho</sprite>
+    <sprite>sprites\spr_menu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -91,6 +93,13 @@
     <script>scripts\scr_frog_jump.gml</script>
     <script>scripts\scr_pounce.gml</script>
     <script>scripts\scr_frog_tongue.gml</script>
+    <script>scripts\MouseOver.gml</script>
+    <script>scripts\MenuColorChange.gml</script>
+    <script>scripts\menuSizeChange.gml</script>
+    <script>scripts\menuSizeChangeX.gml</script>
+    <script>scripts\menuSizeChangeY.gml</script>
+    <script>scripts\menuRotChange.gml</script>
+    <script>scripts\menuRotRepeat.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -126,14 +135,17 @@
     <object>objects\obj_froge</object>
     <object>objects\obj_alien</object>
     <object>objects\obj_slug</object>
+    <object>objects\obj_fish</object>
     <object>objects\obj_background</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_gun</object>
     <object>objects\obj_minifrog</object>
     <object>objects\obj_ray</object>
+    <object>objects\obj_button</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\level_1</room>
+    <room>rooms\menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
