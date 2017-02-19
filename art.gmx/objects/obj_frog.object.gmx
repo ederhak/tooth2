@@ -58,7 +58,7 @@ if ran == 1 {instance_create(x,y,obj_copper)} else if ran == 2 {instance_create(
 if value &gt; 3 {ran = choose(1,2,3)} else if value &gt; 2 { ran = choose(1,2)} else {ran = 1}
 if (irandom_range(1,10) == 1) {instance_create(x,y,obj_shield)}
 }
-instance_create(obj_player.x, -obj_player.y*2, obj_boss);
+instance_create(obj_player.x, -obj_player.y, obj_boss);
 </string>
           </argument>
         </arguments>

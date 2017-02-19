@@ -61,13 +61,16 @@
     <sprite>sprites\spr_teenyfrog</sprite>
     <sprite>sprites\sprite44</sprite>
     <sprite>sprites\sprite45</sprite>
-    <sprite>sprites\sprite46</sprite>
+    <sprite>sprites\spr_gun</sprite>
+    <sprite>sprites\spr_gun_fire</sprite>
     <sprite>sprites\sprite47</sprite>
     <sprite>sprites\sprite14_unnamed (3)</sprite>
     <sprite>sprites\sprite15_unnamed (4)</sprite>
     <sprite>sprites\sprite16_unnamed (5)</sprite>
     <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\spr_alien</sprite>
     <sprite>sprites\sprite27_04pavinform256</sprite>
+    <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_boss_bullet</sprite>
     <sprite>sprites\spr_frogbox</sprite>
     <sprite>sprites\spr_minifrog</sprite>
@@ -121,10 +124,13 @@
     <object>objects\obj_shield</object>
     <object>objects\obj_rainbow</object>
     <object>objects\obj_froge</object>
+    <object>objects\obj_alien</object>
     <object>objects\obj_slug</object>
     <object>objects\obj_background</object>
     <object>objects\obj_explosion</object>
+    <object>objects\obj_gun</object>
     <object>objects\obj_minifrog</object>
+    <object>objects\obj_ray</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
