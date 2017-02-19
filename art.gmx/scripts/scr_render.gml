@@ -4,6 +4,10 @@ instance_activate_region(view_xview[0]-32,view_yview[0]-32,view_wview[0]+32,view
 
 instance_activate_region(view_xview[1]-32,view_yview[1]-32,view_wview[1]+32,view_hview[1]+32,true);
 
+instance_activate_region(view_xview[2]-32,view_yview[2]-32,view_wview[2]+32,view_hview[2]+32,true);
+
+instance_activate_region(view_xview[3]-32,view_yview[3]-32,view_wview[3]+32,view_hview[3]+32,true);
+
 instance_activate_object(obj_frog);
 instance_activate_object(obj_boss);
 instance_activate_object(obj_minifrog);

@@ -3,7 +3,7 @@
   <spriteName>spr_frogbox</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -143,6 +143,9 @@ direction = tempdir;
             <string>direction += 1;
 anger = (0.5*global.dif)/hp +  4.95;
 if hp &lt; 1 {instance_destroy()};
+
+view_xview[2] = x - (view_wview[2]/2);
+view_yview[2] = y - (view_hview[2]/2);
 </string>
           </argument>
         </arguments>
