@@ -27,8 +27,41 @@
             <kind>1</kind>
             <string>alarm[0] = room_speed/4*(3 div global.dif);
 alarm[1] = room_speed*16*(3 div global.dif);
-anger = 5*(3 div global.dif);
-hp = 100*(3 div global.dif);
+anger = 5*global.dif;
+hp = 100*global.dif;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var ran = choose(1,2,3);
+for (value =random_range(36 * (3 div global.dif),1296 * (3 div global.dif)); value &gt; 1; value -= ran)
+{
+if ran == 1 {instance_create(x,y,obj_copper)} else if ran == 2 {instance_create(x,y,obj_silver)} else if ran == 3 instance_create(x,y,obj_gold){}
+if value &gt; 3 {ran = choose(1,2,3)} else if value &gt; 2 { ran = choose(1,2)} else {ran = 1}
+if (irandom_range(1,10) == 1) {instance_create(x,y,obj_shield)}
+}
+with obj_player.boss2 { instance_change(obj_boss, true);}
+boss3 = obj_player.boss3;
+boss3.x = obj_player.x;
+boss3.y = obj_player.y - view_hview[0];
 </string>
           </argument>
         </arguments>
@@ -76,10 +109,14 @@ instance_create(x,y-95,obj_minifrog);
           <argument>
             <kind>1</kind>
             <string>alarm[0] = room_speed/4*(3 div global.dif);
+var tempdir = direction;
+for (tempdif = global.dif; tempdif &gt; 0; tempdif -= 1) {
+direction += choose(-1,0,1);
 bullet = instance_create(x,y,obj_boss_projectile);
-bullet.speed = anger*(3 div global.dif);
+bullet.speed = anger*global.dif;
 bullet.direction = direction;
-
+}
+direction = tempdir;
 </string>
           </argument>
         </arguments>
@@ -103,7 +140,32 @@ bullet.direction = direction;
           <argument>
             <kind>1</kind>
             <string>direction += 1;
-anger = 5*(3 div global.dif)/hp +  4.95;
+anger = (0.5*global.dif)/hp +  4.95;
+if hp &lt; 1 {instance_destroy()};
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_healthbar(x-(sprite_width/2), y - 25 - (sprite_height/2), x+(sprite_width/2), y - (sprite_height/2), hp, c_maroon, c_red, c_lime, 0,true,true);
 </string>
           </argument>
         </arguments>

@@ -18,6 +18,7 @@ if (irandom_range(1,8) = 1) {instance_create(xx,(irandom_range(64,sh)/32)*32-64,
 
 dirtlevel = ((room_height - ah)/32 *32);
 dirtlevel2 = ((room_height/32)*32);
+l=ah;
     for(yy = ah; yy < dirtlevel; yy +=32) 
     {
         instance_create(xx,yy+32, obj_dirt);

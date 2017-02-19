@@ -29,6 +29,7 @@
     <sprite>sprites\spr_spike</sprite>
     <sprite>sprites\spr_bug_head</sprite>
     <sprite>sprites\spr_bear</sprite>
+    <sprite>sprites\spr_charge_bear</sprite>
     <sprite>sprites\spr_sunflower</sprite>
     <sprite>sprites\spr_mushroom</sprite>
     <sprite>sprites\spr_faucet</sprite>
@@ -69,7 +70,9 @@
     <sprite>sprites\sprite15_unnamed (4)</sprite>
     <sprite>sprites\sprite16_unnamed (5)</sprite>
     <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\spr_shotgun</sprite>
     <sprite>sprites\spr_alien</sprite>
+    <sprite>sprites\spr_big_alien</sprite>
     <sprite>sprites\sprite27_04pavinform256</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_boss_bullet</sprite>
@@ -77,6 +80,8 @@
     <sprite>sprites\spr_minifrog</sprite>
     <sprite>sprites\spr_fisho</sprite>
     <sprite>sprites\spr_menu</sprite>
+    <sprite>sprites\spr_reflect</sprite>
+    <sprite>sprites\boss__</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -109,6 +114,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\combo_font</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -143,15 +149,23 @@
     <object>objects\obj_rainbow</object>
     <object>objects\obj_froge</object>
     <object>objects\obj_alien</object>
+    <object>objects\obj_big_alien</object>
     <object>objects\obj_slug</object>
+    <object>objects\obj_charge_bear</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_background</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_gun</object>
+    <object>objects\obj_shotgun</object>
     <object>objects\obj_minifrog</object>
     <object>objects\obj_ray</object>
     <object>objects\obj_button</object>
     <object>objects\management</object>
+    <object>objects\obj_reflect</object>
+    <object>objects\obj_boss_1</object>
+    <object>objects\obj_boss_2</object>
+    <object>objects\obj_boss_3</object>
+    <object>objects\obj_boss_three</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>

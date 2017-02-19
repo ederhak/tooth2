@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grav = 0.4; hsp = 0; vsp = 0; jumpSpeed = 8; moveSpeed = 4;
+            <string>grav = 0.4; hsp = 0; vsp = 0; jumpSpeed = 5; moveSpeed = 2;
 state = choose(scr_frog_idle,scr_pounce,scr_frog_jump,scr_frog_dig, scr_frog_tongue);
 script_execute(state);
-hp = 100*(3 div global.dif);
+hp = 100*global.dif;
 </string>
           </argument>
         </arguments>
@@ -52,13 +52,16 @@ hp = 100*(3 div global.dif);
           <argument>
             <kind>1</kind>
             <string>var ran = choose(1,2,3);
-for (value =random_range(36,1296); value &gt; 1; value -= ran)
+for (value =random_range(36 * (3 div global.dif),1296 * (3 div global.dif)); value &gt; 1; value -= ran)
 {
 if ran == 1 {instance_create(x,y,obj_copper)} else if ran == 2 {instance_create(x,y,obj_silver)} else if ran == 3 instance_create(x,y,obj_gold){}
 if value &gt; 3 {ran = choose(1,2,3)} else if value &gt; 2 { ran = choose(1,2)} else {ran = 1}
 if (irandom_range(1,10) == 1) {instance_create(x,y,obj_shield)}
 }
-instance_create(obj_player.x, -obj_player.y, obj_boss);
+with obj_player.boss2 { instance_change(obj_boss, true);}
+boss2 = obj_player.boss2;
+boss2.x = obj_player.x;
+boss2.y = obj_player.y - view_hview[0];
 </string>
           </argument>
         </arguments>

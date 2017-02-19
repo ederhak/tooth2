@@ -37,6 +37,30 @@ index = 1;
 facing = 1;
 
 ae = audio_emitter_create();
+alarm[0] = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sel = global.sel;
 </string>
           </argument>
         </arguments>
@@ -107,6 +131,11 @@ menuSizeChange(4,0.25);
 if (text == "fullscreen toggle")
 {
 MenuColorChange(c_white, c_blue);
+menuSizeChange(2,0.5);
+}
+if (text == "resume")
+{
+MenuColorChange(c_white, c_aqua);
 menuSizeChange(2,0.5);
 }
 
@@ -194,6 +223,17 @@ if (text == "fullscreen toggle")
 {
 if (management.toggle) { management.toggle = 0 management.alarm[0] = 1;} else {management.toggle = 1 management.alarm[0] = 1};
 }
+if (text == "resume")
+{instance_activate_all();
+global.pause = false;
+with sel.menubox{
+instance_destroy();
+}
+with sel.resumebox {
+instance_destroy();
+}
+}
+
 audio_emitter_pitch(obj_button.ae, random_range(.75,1.25));
 audio_emitter_gain(obj_button.ae,random_range(.5,1));
 audio_play_sound_on(obj_button.ae,bwoop, false,9);

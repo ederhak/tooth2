@@ -51,6 +51,50 @@
             <string>globalvar dif;
 global.dif = 2;
 toggle = 0;
+globalvar pause;
+global.pause = false;
+globalvar sel;
+global.sel = self;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.pause = false {
+instance_deactivate_all(true);
+global.pause = true;
+menubox = instance_create(view_wview[0]/2, view_hview[0]/2 - 48, obj_button);
+resumebox =  instance_create(view_wview[0]/2, view_hview[0]/2 + 48, obj_button);
+menubox.text = "menu";
+resumebox.text = "resume";
+} else 
+{
+instance_activate_all();
+global.pause = false;
+with menubox{
+instance_destroy();
+}
+with resumebox {
+instance_destroy();
+}
+}
 </string>
           </argument>
         </arguments>
