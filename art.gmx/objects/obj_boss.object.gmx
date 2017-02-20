@@ -29,6 +29,7 @@
 alarm[1] = room_speed*16*(3 div global.dif);
 anger = 5*global.dif;
 hp = 100*global.dif;
+global.boss = 2;
 </string>
           </argument>
         </arguments>

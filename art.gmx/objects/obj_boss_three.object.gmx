@@ -31,6 +31,7 @@ hp = 100*global.dif;
 alarm[1] = room_speed/(3 div global.dif);
 anger = 5*global.dif;
 path_start(path2, global.dif, path_action_continue,false);
+global.boss = 3;
 </string>
           </argument>
         </arguments>
