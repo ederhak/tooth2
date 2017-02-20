@@ -183,6 +183,7 @@
     <object>objects\obj_boss_2</object>
     <object>objects\obj_boss_3</object>
     <object>objects\obj_boss_three</object>
+    <object>objects\music</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>

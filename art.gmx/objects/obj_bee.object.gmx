@@ -48,10 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x-16,y-16,obj_tiny_bee);
-instance_create(x-16,y+16,obj_tiny_bee);
-instance_create(x+16,y+16,obj_tiny_bee);
-instance_create(x+16,y-16,obj_tiny_bee);
+            <string>for (bees = 9; bees &gt; 0; bees -= 1) 
+{
+instance_create(x+random_range(-16,16),y+random_range(-16,16), obj_tiny_bee);
+}
 </string>
           </argument>
         </arguments>
