@@ -25,45 +25,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cell_width = 32;
-cell_height = 32;
-
-hcells = view_wview[0]/cell_width;
-vcells = view_hview[0]/cell_width;
-
-global.grid = mp_grid_create(0,0,hcells,vcells,cell_width,cell_height);
-
-mp_grid_add_instances(global.grid,obj_wall,true);
-
-globalvar points;
-global.points = 0;
-
-globalvar combo;
-global.combo = 0;
-
-instance_create(x,y,obj_background);
-
-y = -32;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>grav = 0.4; hsp = 0; vsp = 0; jumpSpeed = 8; moveSpeed = 4; double_jump = 1; hp = 3 div global.dif;
 
 switcher = 1;
@@ -88,6 +49,45 @@ boss3 = instance_create(x,y,obj_boss_3);
 boss1.owner = self;
 boss2.owner = self;
 boss3.owner = self;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cell_width = 32;
+cell_height = 32;
+
+hcells = view_wview[0]/cell_width;
+vcells = view_hview[0]/cell_width;
+
+global.grid = mp_grid_create(0,0,hcells,vcells,cell_width,cell_height);
+
+mp_grid_add_instances(global.grid,obj_wall,true);
+
+globalvar points;
+global.points = 0;
+
+globalvar combo;
+global.combo = 0;
+
+instance_create(x,y,obj_background);
+
+y = -32;
 </string>
           </argument>
         </arguments>
