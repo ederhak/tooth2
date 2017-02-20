@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>grass = instance_create(x+16,y,obj_smallgrass);
 if (irandom_range(1,30*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_greener)} else if (irandom_range(1,30*(3 div global.dif)) == 1) {instance_create(x+16,y-16,obj_bluer)} else if (irandom_range(1,30*(3 div global.dif)) == 1) {instance_create(x+16,y-16,obj_rainbow)} else if (irandom_range(1,30*(3 div global.dif)) == 1) {instance_create(x+16,y-24,obj_froge)} else if (irandom_range(1,30*(3 div global.dif)) == 1) {instance_create(x+16,y-24,obj_charge_bear)} else if (irandom_range(1,30*(3 div global.dif)) == 1) {instance_create(x+16,y-16,obj_spiky)}
-if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_faucet)} else if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_alien)} else if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_froggo)}else if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_birdo}  
+if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_faucet)} else if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_alien)} else if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_froggo)} else if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,obj_birdo)}  
 </string>
           </argument>
         </arguments>
