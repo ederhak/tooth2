@@ -29,7 +29,6 @@
 alarm[1] = room_speed*16*(3 div global.dif);
 anger = 5*global.dif;
 hp = 100*global.dif;
-view_object[2] = self;
 </string>
           </argument>
         </arguments>

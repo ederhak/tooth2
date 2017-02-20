@@ -29,7 +29,6 @@
 state = choose(scr_frog_idle,scr_pounce,scr_frog_jump,scr_frog_dig, scr_frog_tongue);
 script_execute(state);
 hp = 100*global.dif;
-view_object[1] = self;
 </string>
           </argument>
         </arguments>
