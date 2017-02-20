@@ -158,7 +158,7 @@ mp_grid_add_instances(global.grid,obj_wall,true);
             <kind>1</kind>
             <string>kLeft = -keyboard_check(ord("A")); kRight = keyboard_check(ord("D")); kJump = keyboard_check_pressed(ord("W")); kFall = keyboard_check(ord("S"));
 
-move = kLeft + kRight; hsp = move * moveSpeed; if (vsp &lt; 10 &amp;&amp; !kFall) { vsp += grav; } else if (vsp &lt; 40 &amp;&amp; kFall) { vsp+= 4*grav sprite_index = spr_player_ground_pound;} else {sprite_index = spr_player_walk;
+move = kLeft + kRight; hsp = move * moveSpeed; if (vsp &lt; 10 &amp;&amp; !kFall) { vsp += grav; } else if (vsp &lt; 40 &amp;&amp; kFall) { vsp+= 4*grav sprite_index = spr_player_ground_pound;} else {sprite_index = spr_player_walk;}
 
 if (place_meeting(x, y + 1, obj_wall) &amp;&amp; kJump) { vsp = kJump * -jumpSpeed double_jump = 1 audio_emitter_pitch(ae, random_range(.75,1.25));
 audio_emitter_gain(ae,random_range(.5,1));
@@ -200,8 +200,6 @@ if (instance_number(obj_frog) == 0 &amp;&amp; global.points &gt;= 50*global.dif 
 
 reflect.x = x;
 reflect.y = y;
-
-
 </string>
           </argument>
         </arguments>

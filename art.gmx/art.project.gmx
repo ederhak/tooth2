@@ -88,6 +88,8 @@
     <sprite>sprites\spr_spiky</sprite>
     <sprite>sprites\spr_tiny_bee</sprite>
     <sprite>sprites\spr_bee</sprite>
+    <sprite>sprites\sprite71</sprite>
+    <sprite>sprites\sprite72</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -149,6 +151,7 @@
     <object>objects\obj_bump</object>
     <object>objects\obj_boss</object>
     <object>objects\obj_faucet</object>
+    <object>objects\obj_birdo</object>
     <object>objects\obj_froggo</object>
     <object>objects\obj_projectile</object>
     <object>objects\obj_frog</object>
@@ -159,6 +162,7 @@
     <object>objects\obj_gold</object>
     <object>objects\obj_shield</object>
     <object>objects\obj_rainbow</object>
+    <object>objects\obj_rocko</object>
     <object>objects\obj_spiky</object>
     <object>objects\obj_froge</object>
     <object>objects\obj_alien</object>
