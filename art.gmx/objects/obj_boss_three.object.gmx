@@ -25,14 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>facing = choose(-1,1);
-image_xscale= facing;
-hspeed = 3*facing*global.dif;
-alarm[0] = room_speed*(1+ 3 div global.dif);
+            <string>alarm[0] = room_speed*(1+ 3 div global.dif);
 image_speed = global.dif;
 hp = 100*global.dif;
 alarm[1] = room_speed/(3 div global.dif);
 anger = 5*global.dif;
+path_start(path2, global.dif, path_action_continue,false);
 </string>
           </argument>
         </arguments>
@@ -64,32 +62,6 @@ bullet.speed = anger*global.dif;
 bullet.direction = direction;
 }
 direction = tempdir;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>facing = -facing;
-alarm[0] = room_speed*(1+ 3 div global.dif);
-image_xscale= facing;
-hspeed = 3*facing*global.dif;
 </string>
           </argument>
         </arguments>

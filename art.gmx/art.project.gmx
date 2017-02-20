@@ -89,6 +89,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
+    <path>paths\path2</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\scr_generate.gml</script>
