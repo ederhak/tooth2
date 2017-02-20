@@ -55,6 +55,7 @@ globalvar pause;
 global.pause = false;
 globalvar sel;
 global.sel = self;
+audio_play_sound(snd_music, 10, true);
 </string>
           </argument>
         </arguments>

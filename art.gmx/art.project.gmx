@@ -14,6 +14,7 @@
     <sound>sound\snd_birth</sound>
     <sound>sound\snd_death</sound>
     <sound>sound\bwoop</sound>
+    <sound>sound\snd_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_greener</sprite>
@@ -23,6 +24,7 @@
     <sprite>sprites\spr_dirt_grass</sprite>
     <sprite>sprites\spr_dirt</sprite>
     <sprite>sprites\spr_player_walk</sprite>
+    <sprite>sprites\spr_player_ground_pound</sprite>
     <sprite>sprites\spr_player_stand</sprite>
     <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_bug_body</sprite>
@@ -81,7 +83,11 @@
     <sprite>sprites\spr_fisho</sprite>
     <sprite>sprites\spr_menu</sprite>
     <sprite>sprites\spr_reflect</sprite>
+    <sprite>sprites\sprite66</sprite>
     <sprite>sprites\boss__</sprite>
+    <sprite>sprites\spr_spiky</sprite>
+    <sprite>sprites\spr_tiny_bee</sprite>
+    <sprite>sprites\spr_bee</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -123,6 +129,8 @@
     <object>objects\obj_greener</object>
     <object>objects\obj_bluer</object>
     <object>objects\purpler</object>
+    <object>objects\obj_bee</object>
+    <object>objects\obj_tiny_bee</object>
     <object>objects\obj_bean</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_crate</object>
@@ -141,14 +149,17 @@
     <object>objects\obj_bump</object>
     <object>objects\obj_boss</object>
     <object>objects\obj_faucet</object>
+    <object>objects\obj_froggo</object>
     <object>objects\obj_projectile</object>
     <object>objects\obj_frog</object>
+    <object>objects\obj_tiny_frog</object>
     <object>objects\COIN</object>
     <object>objects\obj_silver</object>
     <object>objects\obj_copper</object>
     <object>objects\obj_gold</object>
     <object>objects\obj_shield</object>
     <object>objects\obj_rainbow</object>
+    <object>objects\obj_spiky</object>
     <object>objects\obj_froge</object>
     <object>objects\obj_alien</object>
     <object>objects\obj_big_alien</object>
