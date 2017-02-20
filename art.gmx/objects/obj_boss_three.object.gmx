@@ -110,7 +110,7 @@ anger = (0.5*global.dif)/hp +  4.95;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x+(2*facing), y+55, choose(purpler, obj_bean, obj_bug_head, obj_rainbow, obj_froge, obj_alien, obj_big_alien, obj_slug, obj_charge_bear, obj_fish));
+            <string>instance_create(x-2, y+55, choose(purpler, obj_bean, obj_bug_head, obj_rainbow, obj_froge, obj_alien, obj_big_alien, obj_slug, obj_charge_bear, obj_fish));
 </string>
           </argument>
         </arguments>
