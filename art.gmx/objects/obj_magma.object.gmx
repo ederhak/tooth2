@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>grav = 0.4; hsp = 0; vsp = 0; jumpSpeed = 6; moveSpeed = 3;
+ae = audio_emitter_create();
+audio_emitter_pitch(ae, random_range(.75,1.25));
+audio_emitter_gain(ae,random_range(.5,1));
+audio_play_sound_on(ae,snd_birth, false,9);
+audio_emitter_free(ae);
 </string>
           </argument>
         </arguments>

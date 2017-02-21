@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_emitter_pitch(obj_player.ae, random_range(.75,1.25));
-audio_emitter_gain(obj_player.ae,random_range(.5,1));
-audio_play_sound_on(obj_player.ae,snd_birth, false,9);
+            <string>ae = audio_emitter_create();
+audio_emitter_pitch(ae, random_range(.75,1.25));
+audio_emitter_gain(ae,random_range(.5,1));
+audio_play_sound_on(ae,snd_birth, false,9);
+audio_emitter_free(ae);
 </string>
           </argument>
         </arguments>

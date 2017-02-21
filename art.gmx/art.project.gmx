@@ -16,6 +16,7 @@
     <sound>sound\bwoop</sound>
     <sound>sound\snd_music</sound>
     <sound>sound\snd_boss_music</sound>
+    <sound>sound\snd_damage</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_greener</sprite>
@@ -97,6 +98,7 @@
     <sprite>sprites\boss_4_walk</sprite>
     <sprite>sprites\sprite77</sprite>
     <sprite>sprites\sprite78</sprite>
+    <sprite>sprites\sprite79</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -172,6 +174,7 @@
     <object>objects\obj_gold</object>
     <object>objects\obj_shield</object>
     <object>objects\obj_rainbow</object>
+    <object>objects\obj_coalboy</object>
     <object>objects\obj_rocko</object>
     <object>objects\obj_magma</object>
     <object>objects\obj_spiky</object>
