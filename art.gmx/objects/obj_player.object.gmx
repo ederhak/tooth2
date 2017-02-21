@@ -39,8 +39,6 @@ global.length2 = global.length;
 
 ae = audio_emitter_create();
 
-draw_set_font(combo_font);
-
 reflect = self;
 
 boss1 = instance_create(x,y,obj_boss_1);
