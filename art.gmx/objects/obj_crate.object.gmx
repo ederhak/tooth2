@@ -56,6 +56,7 @@ else if (irandom_range(1,10*(3 div global.dif)) = 1) {instance_create(x+16,y-64,
 else if (irandom_range(1,10*(3 div global.dif)) = 1) {instance_create(x+16,y-64, obj_fish)}
 else if (irandom_range(1,10*(3 div global.dif)) = 1) {instance_create(x+16,y-64, obj_big_alien)} 
 else if (irandom_range(1,10*(3 div global.dif)) = 1) {instance_create(x+16,y-64, obj_bee)}
+else if (irandom_range(1,10*(3 div global.dif)) = 1) {instance_create(x+16,y-64, obj_beetle)}
 if (irandom_range(1,10*(3 div global.dif)) = 1) {boop = instance_create(x,y, obj_spike)} else if (irandom_range(1,10*(3 div global.dif)) = 1) { boop =instance_create(x,y, obj_bump)} else {boop = self}
 </string>
           </argument>

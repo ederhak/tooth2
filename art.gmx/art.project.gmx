@@ -101,6 +101,7 @@
     <sprite>sprites\sprite79</sprite>
     <sprite>sprites\sprite80</sprite>
     <sprite>sprites\sprite81</sprite>
+    <sprite>sprites\sprite82</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -184,6 +185,7 @@
     <object>objects\obj_alien</object>
     <object>objects\obj_big_alien</object>
     <object>objects\obj_slug</object>
+    <object>objects\obj_beetle</object>
     <object>objects\obj_charge_bear</object>
     <object>objects\obj_fish</object>
     <object>objects\obj_background</object>
