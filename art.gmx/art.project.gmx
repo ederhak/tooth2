@@ -90,6 +90,7 @@
     <sprite>sprites\spr_bee</sprite>
     <sprite>sprites\sprite71</sprite>
     <sprite>sprites\sprite72</sprite>
+    <sprite>sprites\sprite73</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>

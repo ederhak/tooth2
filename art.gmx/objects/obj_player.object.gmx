@@ -49,6 +49,8 @@ boss3 = instance_create(x,y,obj_boss_3);
 boss1.owner = self;
 boss2.owner = self;
 boss3.owner = self;
+
+global.points = 0;
 </string>
           </argument>
         </arguments>
@@ -79,11 +81,7 @@ global.grid = mp_grid_create(0,0,hcells,vcells,cell_width,cell_height);
 
 mp_grid_add_instances(global.grid,obj_wall,true);
 
-globalvar points;
-global.points = 0;
 
-globalvar combo;
-global.combo = 0;
 
 instance_create(x,y,obj_background);
 
@@ -164,7 +162,10 @@ if (place_meeting(x, y + 1, obj_wall) &amp;&amp; kJump) { vsp = kJump * -jumpSpe
 audio_emitter_gain(ae,random_range(.5,1));
 audio_play_sound_on(ae,snd_laser_1, false,9); } else if (double_jump &amp;&amp; kJump) { vsp = kJump * -jumpSpeed double_jump = 0 audio_emitter_pitch(ae, random_range(.75,1.25));
 audio_emitter_gain(ae,random_range(.5,1));
+audio_play_sound_on(ae,snd_laser_1, false,9); } else if (global.combo &gt; 0 &amp;&amp; kJump) { vsp = kJump * -jumpSpeed double_jump = 0 combo -= 1 audio_emitter_pitch(ae, random_range(.75,1.25));
+audio_emitter_gain(ae,random_range(.5,1));
 audio_play_sound_on(ae,snd_laser_1, false,9); }
+
 if (place_meeting(x, y + 1, obj_wall)) {global.combo = 0;}
 if (place_meeting(x + hsp, y, obj_wall)) { while (!place_meeting(x + sign(hsp), y, obj_wall)) { x += sign(hsp); } hsp = 0; } x += hsp;
 bop = instance_nearest(x,y,obj_crate);
@@ -666,6 +667,7 @@ for (temphp = hp; temphp &gt; 0; temphp -= 1)
 draw_sprite(spr_shield, 0 , view_xview[0]+((temphp-1)*32), view_yview[0]+415);
 }
 draw_set_colour(c_black);
+draw_set_font(combo_font);
 draw_text(view_xview[0]+40, view_yview[0]+390,global.combo);
 draw_set_colour(c_white);
 draw_text(view_xview[0]+32, view_yview[0]+382,global.combo);
