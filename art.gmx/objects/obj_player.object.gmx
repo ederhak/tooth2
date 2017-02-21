@@ -46,9 +46,11 @@ reflect = self;
 boss1 = instance_create(x,y,obj_boss_1);
 boss2 = instance_create(x,y,obj_boss_2);
 boss3 = instance_create(x,y,obj_boss_3);
+boss4 = instance_create(x,y,obj_boss_4);
 boss1.owner = self;
 boss2.owner = self;
 boss3.owner = self;
+boss4.owner = self;
 
 global.points = 0;
 </string>

@@ -94,6 +94,8 @@
     <sprite>sprites\boss_4_throw</sprite>
     <sprite>sprites\boss_4_erupt</sprite>
     <sprite>sprites\boss_4_walk</sprite>
+    <sprite>sprites\sprite77</sprite>
+    <sprite>sprites\sprite78</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -125,6 +127,9 @@
     <script>scripts\scr_help.gml</script>
     <script>scripts\scr_options.gml</script>
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_4_move.gml</script>
+    <script>scripts\scr_4_erupt.gml</script>
+    <script>scripts\scr_4_throw.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\combo_font</font>
@@ -167,6 +172,7 @@
     <object>objects\obj_shield</object>
     <object>objects\obj_rainbow</object>
     <object>objects\obj_rocko</object>
+    <object>objects\obj_magma</object>
     <object>objects\obj_spiky</object>
     <object>objects\obj_froge</object>
     <object>objects\obj_alien</object>
@@ -186,8 +192,11 @@
     <object>objects\obj_boss_1</object>
     <object>objects\obj_boss_2</object>
     <object>objects\obj_boss_3</object>
+    <object>objects\obj_boss_4</object>
     <object>objects\obj_boss_three</object>
     <object>objects\music</object>
+    <object>objects\obj_boss_four</object>
+    <object>objects\obj_eruption</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
