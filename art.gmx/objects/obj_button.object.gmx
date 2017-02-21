@@ -138,7 +138,11 @@ if (text == "resume")
 MenuColorChange(c_white, c_aqua);
 menuSizeChange(2,0.5);
 }
-
+if (text == "TOOTH")
+{
+MenuColorChange(c_white, c_fuchsia);
+menuSizeChange(4,0.25);
+}
 </string>
           </argument>
         </arguments>
