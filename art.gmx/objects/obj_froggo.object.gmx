@@ -50,7 +50,7 @@ alarm[0] = rof;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = spr_froggo;
+            <string>if image_index == spr_froggo {image_index = spr_froggo_2} else {image_index = spr_froggo}
 alarm[0] = rof;
 </string>
           </argument>

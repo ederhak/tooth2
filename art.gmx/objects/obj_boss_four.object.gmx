@@ -56,7 +56,8 @@ tick = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>facing = (x - owner.x) / abs(x - owner.x);
+            <string>script_execute(state);
+facing = (x - owner.x) / abs(x - owner.x);
 
 move = kLeft + kRight; hsp = move * moveSpeed; if (vsp &lt; 10) { vsp += grav; };
 

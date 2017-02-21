@@ -640,6 +640,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>mp_grid_destroy(global.grid);
 audio_emitter_free(ae);
+audio_stop_all();
 </string>
           </argument>
         </arguments>
