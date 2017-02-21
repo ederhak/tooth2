@@ -199,6 +199,7 @@
     <object>objects\obj_boss_four</object>
     <object>objects\obj_eruption</object>
     <object>objects\obj_cloud</object>
+    <object>objects\boss_cheat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
