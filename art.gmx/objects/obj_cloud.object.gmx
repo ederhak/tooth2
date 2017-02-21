@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,13 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.boss == 1 &amp;&amp; switcher == 0) {audio_stop_sound(snd_music) audio_play_sound(snd_boss_music, 10, true) switcher = 1;};
+            <string>size = random_range(48,128);
+hspeed = choose(-1,1);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="2">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,8 +49,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_music, 10, true);
-switcher = 0;
+            <string>draw_set_alpha(0.5);
+draw_circle_colour(x,y,size,c_white,c_white,false);
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>
