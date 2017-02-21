@@ -260,7 +260,7 @@ with other{instance_destroy();}
 {
 with other 
 {
-hp -= (3 div global.dif )*(global.combo+1);
+hp -= (3 div global.dif )*(global.combo+1)*(abs(owner.vsp)/10);
 obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
@@ -394,7 +394,7 @@ audio_play_sound_on(ae,snd_coin, false,8)
 {
 with other 
 {
-hp -= (3 div global.dif )*(global.combo+1);
+hp -= (3 div global.dif )*(global.combo+1)*(abs(owner.vsp)/10);
 obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 
@@ -434,7 +434,7 @@ global.combo = 0;
 {
 with other 
 {
-hp -= (3 div global.dif )*(global.combo+1);
+hp -= (3 div global.dif )*(global.combo+1)*(abs(owner.vsp)/10);
 obj_player.vsp = -obj_player.vsp - 1;
 }
 } else 

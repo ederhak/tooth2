@@ -91,6 +91,9 @@
     <sprite>sprites\sprite71</sprite>
     <sprite>sprites\sprite72</sprite>
     <sprite>sprites\sprite73</sprite>
+    <sprite>sprites\boss_4_throw</sprite>
+    <sprite>sprites\boss_4_erupt</sprite>
+    <sprite>sprites\boss_4_walk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
