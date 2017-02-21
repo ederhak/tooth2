@@ -58,6 +58,7 @@
     <instance objName="obj_button" x="448" y="256" name="inst_686EB39E" locked="0" code="text = &quot;hard&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="192" y="256" name="inst_CA65F57F" locked="0" code="text = &quot;easy&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="320" y="352" name="inst_0C4CB8C1" locked="0" code="text = &quot;fullscreen toggle&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="diff" x="0" y="0" name="inst_44A2E9DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

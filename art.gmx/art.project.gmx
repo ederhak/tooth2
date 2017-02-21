@@ -99,6 +99,8 @@
     <sprite>sprites\sprite77</sprite>
     <sprite>sprites\sprite78</sprite>
     <sprite>sprites\sprite79</sprite>
+    <sprite>sprites\sprite80</sprite>
+    <sprite>sprites\sprite81</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -203,6 +205,8 @@
     <object>objects\obj_eruption</object>
     <object>objects\obj_cloud</object>
     <object>objects\boss_cheat</object>
+    <object>objects\obj_snail</object>
+    <object>objects\diff</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
