@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = global.dif;
+            <string>image_index = ceil(global.dif);
 </string>
           </argument>
         </arguments>

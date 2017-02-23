@@ -54,11 +54,12 @@
     <instance objName="obj_button" x="64" y="32" name="inst_CCEAE33B" locked="0" code="text = &quot;menu&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="176" y="32" name="inst_F12A69E7" locked="0" code="text = &quot;exit&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="320" y="192" name="inst_324FDC20" locked="0" code="text = &quot;difficulty&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="320" y="256" name="inst_8B24024A" locked="0" code="text = &quot;medium&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="448" y="256" name="inst_686EB39E" locked="0" code="text = &quot;hard&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="192" y="256" name="inst_CA65F57F" locked="0" code="text = &quot;easy&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="320" y="352" name="inst_0C4CB8C1" locked="0" code="text = &quot;fullscreen toggle&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="diff" x="0" y="0" name="inst_44A2E9DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_switcher" x="320" y="288" name="inst_D5386CB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="320" y="256" name="inst_7FB9982B" locked="0" code="text = &quot;medium&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="160" y="256" name="inst_7DADBE17" locked="0" code="text = &quot;easy&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="480" y="256" name="inst_5A57532B" locked="0" code="text = &quot;hard&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="diff" x="0" y="0" name="inst_FDAB565D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

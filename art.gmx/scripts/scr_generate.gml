@@ -14,10 +14,10 @@ var l;
 for(xx=startingroom; xx < endingroom; xx += 32)
 {
 instance_create(xx,ah,obj_grass);
-if (irandom_range(1,8) = 1) {instance_create(xx,(irandom_range(64,sh)/32)*32-64,obj_crate)};
+if (irandom_range(1,8*global.dif) = 1) {instance_create(xx,(irandom_range(64,sh)/32)*32-64,obj_crate)};
 
-dirtlevel = ((room_height - ah)/32 *32);
-dirtlevel2 = ((room_height/32)*32);
+dirtlevel = ((room_height/2 - ah)/32 *32);
+dirtlevel2 = ((room_height/64)*32);
 l=ah;
     for(yy = ah; yy < dirtlevel; yy +=32) 
     {
@@ -33,7 +33,7 @@ l=ah;
     }
 
 
-ah += choose(32,-32,0);
+ah += irandom_range(-32*ceil(global.dif), 32*ceil(global.dif));
 }
 
 return endingroom;

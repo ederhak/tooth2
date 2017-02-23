@@ -102,6 +102,7 @@
     <sprite>sprites\sprite80</sprite>
     <sprite>sprites\sprite81</sprite>
     <sprite>sprites\sprite82</sprite>
+    <sprite>sprites\spr_switcher</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>
@@ -205,10 +206,10 @@
     <object>objects\music</object>
     <object>objects\obj_boss_four</object>
     <object>objects\obj_eruption</object>
-    <object>objects\obj_cloud</object>
     <object>objects\boss_cheat</object>
     <object>objects\obj_snail</object>
     <object>objects\diff</object>
+    <object>objects\obj_switcher</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
