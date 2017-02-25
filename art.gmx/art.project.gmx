@@ -100,9 +100,9 @@
     <sprite>sprites\sprite78</sprite>
     <sprite>sprites\sprite79</sprite>
     <sprite>sprites\sprite80</sprite>
-    <sprite>sprites\sprite81</sprite>
     <sprite>sprites\sprite82</sprite>
     <sprite>sprites\spr_switcher</sprite>
+    <sprite>sprites\sprite85</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgn_mountains</background>

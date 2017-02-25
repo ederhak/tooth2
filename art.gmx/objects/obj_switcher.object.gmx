@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>state = 0;
+background = instance_create(0,0,diff);
 </string>
           </argument>
         </arguments>
@@ -50,6 +51,7 @@
             <kind>1</kind>
             <string>if (state) {global.dif = x - 159*(x/160) if (mouse_x &gt; 159 &amp;&amp; mouse_x&lt; 479) {x = mouse_x;}}
 if !(state) {x = global.dif*160}
+background.image_index = x - 161;
 </string>
           </argument>
         </arguments>
