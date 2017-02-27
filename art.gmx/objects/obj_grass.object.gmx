@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>grass = instance_create(x+16,y,obj_smallgrass);
-if (irandom_range(1,30*(3 div global.dif)) = 1) {instance_create(x+16,y-16,choose(obj_bluer,obj_rainbow,obj_froge,obj_charge_bear,obj_spiky,obj_coalboy,obj_snail,obj_greener))}
-if (irandom_range(1,40*(3 div global.dif)) = 1) {instance_create(x+16,y-16,choose(obj_faucet,obj_alien,obj_froggo,obj_birdo))}
+if (irandom_range(1,15*(3 div global.dif)) = 1) {instance_create(x+16,y-16,choose(obj_bluer,obj_rainbow,obj_froge,obj_charge_bear,obj_spiky,obj_coalboy,obj_snail,obj_greener))}
+if (irandom_range(1,20*(3 div global.dif)) = 1) {instance_create(x+16,y-16,choose(obj_faucet,obj_alien,obj_froggo,obj_birdo))}
 </string>
           </argument>
         </arguments>

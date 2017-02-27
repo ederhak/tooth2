@@ -161,6 +161,7 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_boss_projectile</object>
     <object>objects\obj_dead</object>
+    <object>objects\obj_player_dead</object>
     <object>objects\obj_bug_head</object>
     <object>objects\obj_bug_segment</object>
     <object>objects\obj_spike</object>
