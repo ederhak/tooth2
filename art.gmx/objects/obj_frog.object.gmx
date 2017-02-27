@@ -116,7 +116,7 @@ if (place_meeting(x + hsp, y, obj_wall)) { while (!place_meeting(x + sign(hsp), 
 
 if (place_meeting(x, y + vsp, obj_wall)) { while (!place_meeting(x, y + sign(vsp), obj_wall)) { y += sign(vsp); } vsp = 0; } y += vsp;
 
-if object_exists(obj_player) {if (x&gt;obj_player.x) {image_xscale = -1} else {image_xscale = 1}}
+if object_exists(global.owner) {if (x&gt;global.owner.x) {image_xscale = -1} else {image_xscale = 1}}
 
 if (hp &lt; 1) {instance_destroy();}
 

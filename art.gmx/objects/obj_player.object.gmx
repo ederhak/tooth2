@@ -29,6 +29,8 @@
 
 switcher = 1;
 
+global.owner = self;
+
 cancreate = true;
 
 randomize();
