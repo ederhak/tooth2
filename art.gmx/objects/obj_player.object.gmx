@@ -139,6 +139,7 @@ corpse.image_xscale = image_xscale;
             <string>mp_grid_destroy(global.grid);
 global.grid = mp_grid_create(view_xview[0],view_yview[0],hcells,vcells,cell_width,cell_height);
 mp_grid_add_instances(global.grid,obj_wall,true);
+global.owner = self;
 </string>
           </argument>
         </arguments>
