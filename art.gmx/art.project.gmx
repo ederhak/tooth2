@@ -217,6 +217,7 @@
     <room>rooms\help</room>
     <room>rooms\options</room>
     <room>rooms\level_1</room>
+    <room>rooms\level_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

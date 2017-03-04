@@ -70,7 +70,7 @@ kLeft = 0; kRight = 0; kJump = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if object_exists(owner) if x &lt; owner.x {kLeft = 0 kRight = 1} else { kLeft = -1 kRight = 0 }
+            <string>if instance_number(obj_player) if x &lt; owner.x {kLeft = 0 kRight = 1} else { kLeft = -1 kRight = 0 }
 
 move = kLeft + kRight;if place_meeting(x+move,y,obj_wall) {kJump = 1} else {kJump = 0}; hsp = move * moveSpeed; if (vsp &lt; 10) { vsp += grav; };
 
@@ -79,7 +79,7 @@ if (place_meeting(x, y + 1, obj_wall) &amp;&amp; kJump) { vsp = kJump * -jumpSpe
 if (place_meeting(x + hsp, y, obj_wall)) { while (!place_meeting(x + sign(hsp), y, obj_wall)) { x += sign(hsp); } hsp = 0; } x += hsp;
 
 if (place_meeting(x, y + vsp, obj_wall)) { while (!place_meeting(x, y + sign(vsp), obj_wall)) { y += sign(vsp); } vsp = 0; } y += vsp;
-if object_exists(owner) if (x&gt;owner.x) {image_xscale = -1} else {image_xscale = 1}
+if instance_number(obj_player) if (x&gt;owner.x) {image_xscale = -1} else {image_xscale = 1}
 </string>
           </argument>
         </arguments>

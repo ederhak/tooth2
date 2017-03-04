@@ -120,7 +120,7 @@ sprite_index = spr_gun_fire;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if object_exists(owner) direction = point_direction(x, y, owner.x, owner.y);
+            <string>if instance_number(obj_player) direction = point_direction(x, y, owner.x, owner.y);
 image_index = -45+direction;
 </string>
           </argument>

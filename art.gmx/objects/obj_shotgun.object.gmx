@@ -102,7 +102,7 @@ direction = tempdir -15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if object_exists(owner) direction = point_direction(x, y, owner.x, owner.y);
+            <string>if instance_number(obj_player) direction = point_direction(x, y, owner.x, owner.y);
 image_index = direction-45;
 </string>
           </argument>

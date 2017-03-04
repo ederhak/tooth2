@@ -48,8 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (object_exists(owner)){ x = owner.x;}
-if (object_exists(owner)){ y = owner.y;}
+            <string>if (instance_number(obj_player)){ x = owner.x;}
+if (instance_number(obj_player)){ y = owner.y;}
 </string>
           </argument>
         </arguments>

@@ -72,7 +72,7 @@ path_start(path0, 1, path_action_continue, false);
             <kind>1</kind>
             <string>alarm[0] = room_speed/2*(3 div global.dif);
 bullet = instance_create(x,y,obj_boss_projectile);
-if object_exists(owner) bullet.direction = point_direction(x,y, owner.x, owner.y);
+if instance_number(obj_player) bullet.direction = point_direction(x,y, owner.x, owner.y);
 bullet.speed = 5;
 </string>
           </argument>
